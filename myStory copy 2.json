@@ -1,0 +1,205 @@
+{
+    "Title": "To Hatch An Egg",
+    "Credits": "Created by Melissa Rosales (meaprosa@ucsc.edu).",
+    "InitialLocation": "The Egg Chamber",
+    "Locations": {
+        "The Egg Chamber": {
+            "Body": "\"Hello! Welcome, welcome! Oh you must be here to pick up your egg! Hmmm, ah yes I see your name. Give me two seconds I'll be right back!\" Soon enough the store manager returns. \"I got your egg here, but something seems to be the matter...hmm oh dear, unfortunalty the only help I can provide is to ask the witch, she lives through the forest, she'll help you there.\"",
+            "VisitedBody": "\"Ah I see you have return any progress? Please let me know if you find any solutions, for now I'll keep looking myself\" I clerk opens up a book, it seems to be about caring for eggs.",
+            "Choices": [
+                {
+                    "Text": "Go to the Feed Store",
+                    "Target": "Feed Store"
+                },
+                {
+                    "Text": "Go to the Flower Shop",
+                    "Target": "Flower Shop"
+                }
+            ]
+        },
+        "Feed Store": {
+            "Body": "You approach the Feed Supply store hoping to find some more information there. \"Why hello there my dear! Welcome to Pellets, Grain and More! Where all your feed supplies is supplied! What can I do for you? Ah...ahuh, looking for the witch I see, your egg is sick. Oh my, this will not do. For starters take this.\" You have obtained Herbal grain. \"It'll help your little pet when it hatches. As for the witch pass through the forest, you'll find her there. Goodluck.\"",
+            "VisitedBody": "Walking back into Pellets Grain and More, the shop owner greets you once more. \"Welcome back deary, I hope your little mission is going well, let me know if you need anything else!\"",
+            "GetItem": "Herbal Grain",
+            "Choices": [
+                {
+                    "Text": "Pass through the Whimsical Wood",
+                    "Target": "Whimsical Wood"
+                },
+                {
+                    "Text": "Go back the Egg shop",
+                    "Target": "The Egg Chamber"    
+                }
+            ]
+        },
+        "Flower Shop":{
+            "Body": "Walking down the town you catch a wiff of a floral scent. Turning you notice a botony shop decorated in an array of colorful flowers. Strolling inside you hear a voice muffled behind some plants. \"OH, I'm so sorry I um didnt see you come in! What can I do you for? Ohhh I see, hm I'm sorry about that, I hope you find a cure. Errrr...here, pick any of these flowers I know they won't help but hopefully they bring good spirit!\"",
+            "VisitedBody": "You decide to walk back to the Botony shop quickly greeted by the bubbly Botonist \"Oh heyo! Please feel free to let me know if you need anything!\"",
+            "Choices": [
+                {
+                    "Text": "Take the Blue Flower",
+                    "Target": "Blue Flower"
+                },
+                {
+                    "Text": "Take the Red Flower",
+                    "Target": "Red Flower"
+                },
+                {
+                    "Text": "Take the Green Flower",
+                    "Target": "Green Flower"
+                }
+            ],
+            "VisitedChoices":[
+                {
+                    "Text": "Go back the Egg shop",
+                    "Target": "The Egg Chamber"    
+                }
+            ]
+        },
+        "Blue Flower":{
+            "Body": "You pick up the blue flower. \"Ah wonderful choice, such a calm color. Please feel free to stop by anytime.\"",
+            "GetItem": "Blue Flower",
+            "Choices": [
+                {
+                    "Text": "Go back the Egg shop",
+                    "Target": "The Egg Chamber"
+                }
+            ]
+        },
+        "Green Flower":
+        {
+            "Body": "You pick up the Green flower. \"Ah I love the color green, reminds me of all my plants! Please feel free to stop by anytime.\"",
+            "GetItem": "Green Flower",
+            "Choices": [
+                {
+                    "Text": "Go back the Egg shop",
+                    "Target": "The Egg Chamber"    
+                }
+            ]
+        },
+        "Red Flower":
+        {
+            "Body": "You pick up the Red flower. \"Ah red, bold and fiesty, like a fiery ruby! Please feel free to stop by anytime.\"",
+            "GetItem": "Red Flower",
+            "Choices": [
+                {
+                    "Text": "Go back the Egg shop",
+                    "Target": "The Egg Chamber"    
+                }
+            ]
+        },
+        "Whimsical Wood": {
+            "Body": "Treaking through the forest the dark oaks crowd around you. A cold chill runs down your spin as you notice the path ahead branches. Where do you choose to go?",
+            "Choices": [
+                {
+                    "Text": "Sparkling Lake",
+                    "Target": "Magic Lake"
+                },
+                {
+                    "Text": "An odd Cabin",
+                    "Target": "Witches Shop"
+                },
+                {
+                    "Text": "Back to the Feed Store",
+                    "Target": "Feed Store"
+                }
+            ]
+        },
+        "Magic Lake": {
+            "Body": "As the forest clears you catch view of the sun, glistening down onto the sparkling water. However your peace of mind is disturbed when a voice rings out in your ears a small whisper, something you cant make out.",
+            "ItemObtained": "You walk past the shimmering lake, it sparkles under the sunlight, like a crystal. You wonder if the water would be drinkable, I mean probably?",
+            "CheckItem": ["Blessed Lake Water"],
+            "Choices": [
+                {
+                    "MissingItem": ["Blessed Lake Water"],
+                    "Text": "Tread Closer",
+                    "Target": "Lake Water"
+                },
+                {
+                    "Text": "Go deeper into the forest",
+                    "Target": "Deep Forest"
+                },
+                {
+                    "Text": "Back to the forest",
+                    "Target": "Whimsical Wood"
+                }
+            ],
+            "ItemObtainedChoices":[
+                {
+                    "Text": "Go deeper into the forest",
+                    "Target": "Deep Forest"
+                },
+                {
+                    "Text": "Back to the forest",
+                    "Target": "Whimsical Wood"
+                }
+            ]
+        },
+        "Lake Water":{
+            "Body": "As you approach the water you notice a ripple. You crouch down over the edge of land reaching out. Do you touch the ripple?",
+            "Choices": [
+                {
+                    "Text": "Reach out and touch the water",
+                    "Target": "Water Touched"
+                },
+                {
+                    "Text": "No way! Go deeper into the forest",
+                    "Target": "Deep Forest"
+                },
+                {
+                    "Text": "Back to the forest",
+                    "Target": "Whimsical Wood"
+                }
+            ]
+        },
+        "Water Touched": {
+            "Body": "Delicatly gracing the water the ripple grows, and the glistening from the sun glows on point where you touched the water. Reaching back a small bubble floats up. \"Hello my child, thank you for lending me your ear. You see I have been watching you and wish to tell you about the young egg you are trying to save. You see that egg has suffered through much loss, even if unbeknowenst to it, the poor creature has fallen from the mountains above its mother dragon gone to humanities torment. I wish to aid you to see this creature survive, please save the poor thing and show it humanities good.\" You obtained a bottle of blessed lake water.",
+            "GetItem": "Blessed Lake Water",
+            "Choices":[
+                {
+                    "Text": "Go deeper into the forest",
+                    "Target": "Deep Forest"
+                },
+                {
+                    "Text": "Back to the forest",
+                    "Target": "Whimsical Wood"
+                }
+            ]
+        },
+        "Deep Forest":{
+            "Body": "The light that once shown onto the lake is now shadowed by the overgrown oaks. The owls echo through the dark caverns of this forest. Up ahead you notice a patch of fungi, do you want to grab any. They couldn't be posinious right?",
+            "ItemObtained": "The light that once shown onto the lake is now shadowed by the overgrown oaks. The owls echo through the dark caverns of this forest.",
+            "CheckItem": ["Mushroom"],
+            "Choices": [
+                {
+                    "Text": "Collect the Fungi",
+                    "Target": "Fungi"
+                },
+                {
+                    "Text": "Head back to the Magical Lake",
+                    "Target": "Magic Lake"
+                }
+            ],
+            "ItemObtainedChoices":[
+                {
+                    "Text": "Back to the forest",
+                    "Target": "Whimsical Wood"
+                }
+            ]
+        },
+        "Fungi":{
+            "Body": "You pluk a mushroom off the ground and put it into your bag. You've obtained a mushroom.",
+            "GetItem": "Mushroom",
+            "Choices":[
+                {
+                    "Item": "Mushroom",
+                    "Text": "Head back to the Magical Lake",
+                    "Target": "Magic Lake"
+                }
+            ]
+        },
+        "Home": {
+            "Body": "Your finally home, time to rest and finish all your homework."
+        }
+    }
+}

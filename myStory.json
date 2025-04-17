@@ -1,58 +1,283 @@
 {
-    "Title": "Campus Life on the West Side",
-    "Credits": "Created by Adam Smith (amsmith@ucsc.edu).",
-    "InitialLocation": "Kresge",
+    "Title": "To Hatch An Egg",
+    "Credits": "Created by Melissa Rosales (meaprosa@ucsc.edu).",
+    "InitialLocation": "The Egg Chamber",
     "Locations": {
-        "Kresge": {
-            "Body": "This is Kresge College, lots of nice trees.",
+        "The Egg Chamber": {
+            "Body": "\"Hello! Welcome, welcome! Oh, you must be here to pick up your egg! Hmmm, ah yes, I see your name. Give me two seconds, and I'll be right back!\" Soon enough, the store manager returns. \"I got your egg here, but something seems to be the matter...hmm, oh dear, unfortunately, the only help I can provide is to ask the witch, she lives through the forest, she'll help you there.\"",
+            "VisitedBody": "\"Ah I see you have returned, any progress? Please let me know if you find any solutions. For now, I'll keep looking myself.\" The clerk opens up a book, it seems to be about caring for eggs.",
             "Choices": [
                 {
-                    "Text": "South",
-                    "Target": "Porter"
-                }
-            ]
-        },
-        "Porter": {
-            "Body": "This is Porter College, the trees are nice here too.",
-            "Choices": [
-                {
-                    "Text": "North",
-                    "Target": "Kresge"
+                    "MissingItems": ["Red Potion", "Green Potion", "Blue Potion"],
+                    "Text": "Go to the Feed Store",
+                    "Target": "Feed Store"
                 },
                 {
-                    "Text": "South",
-                    "Target": "Rachel Carson"
-                }
-            ]
-        },
-        "Rachel Carson": {
-            "Body": "Rachel Carson College, more sun and fewer trees.",
-            "Choices": [
-                {
-                    "Text": "North",
-                    "Target": "Porter"
+                    "MissingItems": ["Red Potion", "Green Potion", "Blue Potion"],
+                    "Text": "Go to the Flower Shop",
+                    "Target": "Flower Shop"
                 },
                 {
-                    "Text": "South",
-                    "Target": "Oakes"
-                }
-            ]
-        },
-        "Oakes": {
-            "Body": "Oakes College, even the buildings have tree bark on them.",
-            "Choices": [
-                {
-                    "Text": "North",
-                    "Target": "Rachel Carson"
+                    "HasItems": ["Red Potion"],
+                    "Text": "Give the red Potion to the egg",
+                    "Target": "Red Potion Ending"
                 },
                 {
-                    "Text": "South",
-                    "Target": "Beyond"
+                    "HasItems": ["Blue Potion"],
+                    "Text": "Give the blue potion to the egg",
+                    "Target": "Blue Potion Ending"
+                },
+                {
+                    "HasItems": ["Green Potion"],
+                    "Text": "Give the green potion to the egg",
+                    "Target": "Green Potion Ending"
                 }
             ]
         },
-        "Beyond": {
-            "Body": "Grass, don't forget to check for ticks!"
+        "Feed Store": {
+            "Body": "You approach the Feed Supply store hoping to find some more information there. \"Why hello there, my dear! Welcome to Pellets, Grain, and More! Where all your feed supplies is supplied! What can I do for you? Ah...ahuh, looking for the witch, I see, your egg is sick. Oh my, this will not do. For starters, take this.\" You have obtained Herbal grain. \"It'll help your little pet when it hatches. As for the witch, pass through the forest, and you'll find her there. Good luck.\"",
+            "VisitedBody": "Walking back into Pellats Grain and More, the shop owner greets you once more. \"Welcome back, deary, I hope your little mission is going well, let me know if you need anything else!\"",
+            "GetItem": "Grain",
+            "Choices": [
+                {
+                    "Text": "Pass through the Whimsical Wood",
+                    "Target": "Whimsical Wood"
+                },
+                {
+                    "Text": "Go back the Egg shop",
+                    "Target": "The Egg Chamber"    
+                }
+            ]
+        },
+        "Flower Shop":{
+            "Body": "Walking down the town, you catch a whiff of a floral scent. Turning you notice a botany shop decorated in an array of colorful flowers. Strolling inside, you hear a voice muffled behind some plants. \"OH, I'm so sorry I um didnt see you come in! What can I do you for? Ohhh, I see, h,m I'm sorry about that, I hope you find a cure. Errrr...here, pick any of these flowers. I know they won't help, but hopefully they bring good spirit!\"",
+            "VisitedBody": "You decide to walk back to the Botony shop, quickly greeted by the bubbly Botonist \"Oh heyo! Please feel free to let me know if you need anything!\"",
+            "Choices": [
+                {
+                    "Text": "Take the Blue Flower",
+                    "Target": "Blue Flower"
+                },
+                {
+                    "Text": "Take the Red Flower",
+                    "Target": "Red Flower"
+                },
+                {
+                    "Text": "Take the Green Flower",
+                    "Target": "Green Flower"
+                }
+            ],
+            "VisitedChoices":[
+                {
+                    "Text": "Go back the Egg shop",
+                    "Target": "The Egg Chamber"    
+                }
+            ]
+        },
+        "Blue Flower":{
+            "Body": "You pick up the blue flower. \"Ah wonderful choice, such a calm color. Please feel free to stop by anytime.\"",
+            "GetItem": "Blue Flower",
+            "Choices": [
+                {
+                    "Text": "Go back the Egg shop",
+                    "Target": "The Egg Chamber"
+                }
+            ]
+        },
+        "Green Flower":
+        {
+            "Body": "You pick up the Green flower. \"Ah I love the color green, reminds me of all my plants! Please feel free to stop by anytime.\"",
+            "GetItem": "Green Flower",
+            "Choices": [
+                {
+                    "Text": "Go back the Egg shop",
+                    "Target": "The Egg Chamber"    
+                }
+            ]
+        },
+        "Red Flower":
+        {
+            "Body": "You pick up the Red flower. \"Ah, red, bold and fiesty, like a fiery ruby! Please feel free to stop by anytime.\"",
+            "GetItem": "Red Flower",
+            "Choices": [
+                {
+                    "Text": "Go back the Egg shop",
+                    "Target": "The Egg Chamber"    
+                }
+            ]
+        },
+        "Whimsical Wood": {
+            "Body": "Treking through the forest, the dark oaks crowd around you. A cold chill runs down your spine as you notice the path ahead branches. Where do you choose to go?",
+            "Choices": [
+                {
+                    "Text": "Sparkling Lake",
+                    "Target": "Magic Lake"
+                },
+                {
+                    "Text": "An Odd Cabin",
+                    "Target": "Witches Shop"
+                },
+                {
+                    "Text": "Back to the Feed Store",
+                    "Target": "Feed Store"
+                }
+            ]
+        },
+        "Magic Lake": {
+            "Body": "As the forest clears, you catch a view of the sun, glistening down onto the sparkling water. However, your peace of mind is disturbed when a voice rings out in your ears, a small whisper, something you can't make out.",
+            "ItemObtained": "You walk past the shimmering lake, it sparkles under the sunlight, like a crystal. You wonder if the water would be drinkable, I mean probably?",
+            "CheckItem": ["Blessed Lake Water"],
+            "Choices": [
+                {
+                    "MissingItems": ["Blessed Lake Water"],
+                    "Text": "Tread Closer",
+                    "Target": "Lake Water"
+                },
+                {
+                    "Text": "Go deeper into the forest",
+                    "Target": "Deep Forest"
+                },
+                {
+                    "Text": "Back to the forest",
+                    "Target": "Whimsical Wood"
+                }
+            ]
+        },
+        "Lake Water":{
+            "Body": "As you approach the water you notice a ripple. You crouch down over the edge of land reaching out. Do you touch the ripple?",
+            "Choices": [
+                {
+                    "Text": "Reach out and touch the water",
+                    "Target": "Water Touched"
+                },
+                {
+                    "Text": "No way! Go deeper into the forest",
+                    "Target": "Deep Forest"
+                },
+                {
+                    "Text": "Back to the forest",
+                    "Target": "Whimsical Wood"
+                }
+            ]
+        },
+        "Water Touched": {
+            "Body": "Delicatly gracing the water the ripple grows, and the glistening from the sun glows on point where you touched the water. Reaching back a small bubble floats up. \"Hello my child, thank you for lending me your ear. You see I have been watching you and wish to tell you about the young egg you are trying to save. You see that egg has suffered through much loss, even if unbeknowenst to it, the poor creature has fallen from the mountains above its mother dragon gone to humanities torment. I wish to aid you to see this creature survive, please save the poor thing and show it humanities good.\" You obtained a bottle of blessed lake water.",
+            "GetItem": "Blessed Lake Water",
+            "Choices":[
+                {
+                    "Text": "Go deeper into the forest",
+                    "Target": "Deep Forest"
+                },
+                {
+                    "Text": "Back to the forest",
+                    "Target": "Whimsical Wood"
+                }
+            ]
+        },
+        "Deep Forest":{
+            "Body": "The light that once shown onto the lake is now shadowed by the overgrown oaks. The owls echo through the dark caverns of this forest. Up ahead you notice a patch of fungi, do you want to grab any. They couldn't be posinious right?",
+            "ItemObtained": "The light that once shown onto the lake is now shadowed by the overgrown oaks. The owls echo through the dark caverns of this forest.",
+            "CheckItem": ["Mushroom"],
+            "Choices": [
+                {
+                    "MissingItems": ["Mushroom"],
+                    "Text": "Collect the Fungi",
+                    "Target": "Fungi"
+                },
+                {
+                    "Text": "Head back to the Magical Lake",
+                    "Target": "Magic Lake"
+                }
+            ]
+        },
+        "Fungi":{
+            "Body": "You pluck a mushroom off the ground and put it into your bag. You've obtained a mushroom.",
+            "GetItem": "Mushroom",
+            "Choices":[
+                {
+                    "Text": "Head back to the Magical Lake",
+                    "Target": "Magic Lake"
+                }
+            ]
+        },
+        "Witches Shop": {
+            "Body": "Stepping onto the doorstep of the cabin you notice erooding moss creeping up the outside of the walls. Bottles hang above you tied up by rope. Before you had the chance to knock on the door it creeks open and your hit with the scent of herbs and blood...\"Oh shoot, house did you let someone in again.\" A tall women approaches you dressed elegant wear for the house she lives in...You greet her. \"Ahhh, it's you. Let me guess you need my help. How did I know? I know everything in this town, and that you require my assistance. Now, in order to help your little egg, I will need to brew a potion. Don't worry, this is a medicial brew. But in order to do this, I will need...hmm where did I put my book. Ah yes here, I need some herbal grain of some kind, a beautiful flower, Mushroom Root, and magical water. That is all I need! Get me these things and I can help you out!\"",
+            "VisitedBody": "\"Welcome back, hmmm I see you still lack some ingrediants. Remember I need some herbal grain of some kind, a beautiful flower, Mushroom Root, and magical water.\"",
+            "ItemObtained": "Stepping onto the doorstep of the cabin you notice erooding moss creeping up the outside of the walls. Bottles hang above you tied up by rope. Before you had the chance to knock on the door it creeks open and your hit with the scent of herbs and blood...\"Oh shoot, house did you let someone in again.\" A tall women approaches you dressed elegant wear for the house she lives in...You greet her. \"Ahhh, it's you. Let me guess you need my help. How did I know? I know everything in this town, and that you require my assistance. Now, in order to help your little egg, I will need to brew a potion. Don't worry, this is a medicial brew. Oh, I see you are quite the perceptive one. You have all the items I require perfect.\"",
+            "VisitedItemObtained": "The door creeks open once again but no one stands behind it. You slowly walk inside to see the Witch standing over her cauldren. \"I've been expecting you, come quickly we must hastin.\"",
+            "CheckItem": ["Blessed Lake Water", "Mushroom", "Grain", ["Red Flower", "Green Flower", "Blue Flower"]],
+            "Choices": [
+                {
+                    "Text": "Leave",
+                    "Target": "Whimsical Wood"
+                },
+                {
+                    "HasItems": ["Blessed Lake Water", "Mushroom", "Grain", "Red Flower"],
+                    "Text": "Give her the ingrediants",
+                    "Target": "Get Red Potion"
+                },
+                {
+                    "HasItems": ["Blessed Lake Water", "Mushroom", "Grain", "Green Flower"],
+                    "Text": "Give her the ingrediants",
+                    "Target": "Get Green Potion"
+                },
+                {
+                    "HasItems": ["Blessed Lake Water", "Mushroom", "Grain", "Blue Flower"],
+                    "Text": "Give her the ingrediants",
+                    "Target": "Get Blue Potion"
+                }
+            ]
+        },
+        "Get Red Potion":{
+            "Body": "You hand the witch her ingridiants and she immidiatly begins to brew. Adding in an ingreditant at a time, the witch stirs occasionally. You stand watching for what feels like awhile, but soon enough the witch grabs a bottle and fills it up with a red liquid. \"Alright, it is done. Now take this and poor it on your little egg, it should heal up and hatch. Don't worry I can get you to your egg, take this door it'll lead straight to the Egg Chamber.\" You thank the witch and hurry out of the cabin.",
+            "GetItem": "Red Potion",
+            "Choices": [
+                {
+                    "Text": "Go through the forest",
+                    "Target": "Whimsical Wood"
+                },
+                {
+                    "Text": "Take the door straight to your egg", 
+                    "Target": "The Egg Chamber"
+                }
+
+            ]
+        },
+        "Get Blue Potion":{
+            "Body": "You hand the witch her ingridiants and she immidiatly begins to brew. Adding in an ingreditant at a time, the witch stirs occasionally. You stand watching for what feels like awhile, but soon enough the witch grabs a bottle and fills it up with a blue liquid. \"Alright, it is done. Now take this and poor it on your little egg, it should heal up and hatch. Don't worry I can get you to your egg, take this door it'll lead straight to the Egg Chamber.\" You thank the witch and hurry out of the cabin.",
+            "GetItem": "Blue Potion",
+            "Choices": [
+                {
+                    "Text": "Go through the forest",
+                    "Target": "Whimsical Wood"
+                },
+                {
+                    "Text": "Take the door straight to your egg",
+                    "Target": "The Egg Chamber"
+                }
+            ]
+        },
+        "Get Green Potion":{
+            "Body": "You hand the witch her ingridiants and she immidiatly begins to brew. Adding in an ingreditant at a time, the witch stirs occasionally. You stand watching for what feels like awhile, but soon enough the witch grabs a bottle and fills it up with a green liquid. \"Alright, it is done. Now take this and poor it on your little egg, it should heal up and hatch. Don't worry I can get you to your egg, take this door it'll lead straight to the Egg Chamber.\" You thank the witch and hurry out of the cabin.",
+            "GetItem": "Green Potion",
+            "Choices": [
+                {
+                    "Text": "Go through the forest",
+                    "Target": "Whimsical Wood"
+                },
+                {
+                    "Text": "Take the door straight to your egg",
+                    "Target": "The Egg Chamber"
+                }
+            ]
+        },
+        "Green Potion Ending": {
+            "Body": "\"OH, you got the witches healing potion? Wonderful wonderful, please do as you were instructed.\" Approaching the egg you delicatly upcap the green liquid and poor it over the egg. Sudenly the egg starts to glow warmly a sage green. And soon it cracks open revealing a green baby dragon. It looks up at you deeming you its parent and sneezes as plants grow around you. Congragulations you saved your dragon and hatched a Forest Dragon."
+        },
+        "Blue Potion Ending":{
+            "Body": "\"OH, you got the witches healing potion? Wonderful wonderful, please do as you were instructed.\" Approaching the egg you delicatly upcap the blue liquid and poor it over the egg. Sudenly the egg starts to glow warmly a deep blue. And soon it cracks open revealing a blue baby dragon. It looks up at you deeming you its parent and runs to sit in the water bowl in the corner trying to play in it. Congragulations you saved your dragon and hatched a Water Dragon."
+        },
+        "Red Potion Ending": {
+            "Body": "\"OH, you got the witches healing potion? Wonderful wonderful, please do as you were instructed.\" Approaching the egg you delicatly upcap the red liquid and poor it over the egg. Sudenly the egg starts to glow warmly a bright red. And soon it cracks open revealing a firery red baby dragon. It looks up at you deeming you its parent and it coughs spitting out fire and smoked. Congragulations you saved your dragon and hatched a Fire Dragon."
         }
     }
 }
