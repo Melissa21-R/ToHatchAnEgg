@@ -143,7 +143,7 @@
             ]
         },
         "Lake Water":{
-            "Body": "As you approach the water you notice a ripple. You crouch down over the edge of land reaching out. Do you touch the ripple?",
+            "Body": "As you approach the water, you notice a ripple. You crouch down over the edge of the land, reaching out. Do you touch the ripple?",
             "Choices": [
                 {
                     "Text": "Reach out and touch the water",
@@ -160,7 +160,7 @@
             ]
         },
         "Water Touched": {
-            "Body": "Delicatly gracing the water the ripple grows, and the glistening from the sun glows on point where you touched the water. Reaching back a small bubble floats up. \"Hello my child, thank you for lending me your ear. You see I have been watching you and wish to tell you about the young egg you are trying to save. You see that egg has suffered through much loss, even if unbeknowenst to it, the poor creature has fallen from the mountains above its mother dragon gone to humanities torment. I wish to aid you to see this creature survive, please save the poor thing and show it humanities good.\" You obtained a bottle of blessed lake water.",
+            "Body": "Delicately gracing the water, the ripple grows, and the glistening from the sun glows on the point where you touched the water. Reaching back, a small bubble floats up. \"Hello, my child, thank you for lending me your ear. I have been watching you and wish to tell you about the young egg you are trying to save. You see that egg has suffered through much loss, even if unbeknownst to it, the poor creature has fallen from the mountains above its mother dragon, gone to humanity's torment. I wish to aid you and see this creature survive. Please save the poor thing and show it humanity's goodness.\" You obtained a bottle of blessed lake water.",
             "GetItem": "Blessed Lake Water",
             "Choices":[
                 {
@@ -174,8 +174,8 @@
             ]
         },
         "Deep Forest":{
-            "Body": "The light that once shown onto the lake is now shadowed by the overgrown oaks. The owls echo through the dark caverns of this forest. Up ahead you notice a patch of fungi, do you want to grab any. They couldn't be posinious right?",
-            "ItemObtained": "The light that once shown onto the lake is now shadowed by the overgrown oaks. The owls echo through the dark caverns of this forest.",
+            "Body": "The overgrown oaks now shadow the light that once shone onto the lake. The owls echo through the dark caverns of this forest. Up ahead, you notice a patch of fungi. Do you want to grab any? They couldn't be poisonous, right?",
+            "ItemObtained": "The overgrown oaks now shadow the light that once shone onto the lake. The owls echo through the dark caverns of this forest.",
             "CheckItem": ["Mushroom"],
             "Choices": [
                 {
@@ -200,10 +200,10 @@
             ]
         },
         "Witches Shop": {
-            "Body": "Stepping onto the doorstep of the cabin you notice erooding moss creeping up the outside of the walls. Bottles hang above you tied up by rope. Before you had the chance to knock on the door it creeks open and your hit with the scent of herbs and blood...\"Oh shoot, house did you let someone in again.\" A tall women approaches you dressed elegant wear for the house she lives in...You greet her. \"Ahhh, it's you. Let me guess you need my help. How did I know? I know everything in this town, and that you require my assistance. Now, in order to help your little egg, I will need to brew a potion. Don't worry, this is a medicial brew. But in order to do this, I will need...hmm where did I put my book. Ah yes here, I need some herbal grain of some kind, a beautiful flower, Mushroom Root, and magical water. That is all I need! Get me these things and I can help you out!\"",
-            "VisitedBody": "\"Welcome back, hmmm I see you still lack some ingrediants. Remember I need some herbal grain of some kind, a beautiful flower, Mushroom Root, and magical water.\"",
-            "ItemObtained": "Stepping onto the doorstep of the cabin you notice erooding moss creeping up the outside of the walls. Bottles hang above you tied up by rope. Before you had the chance to knock on the door it creeks open and your hit with the scent of herbs and blood...\"Oh shoot, house did you let someone in again.\" A tall women approaches you dressed elegant wear for the house she lives in...You greet her. \"Ahhh, it's you. Let me guess you need my help. How did I know? I know everything in this town, and that you require my assistance. Now, in order to help your little egg, I will need to brew a potion. Don't worry, this is a medicial brew. Oh, I see you are quite the perceptive one. You have all the items I require perfect.\"",
-            "VisitedItemObtained": "The door creeks open once again but no one stands behind it. You slowly walk inside to see the Witch standing over her cauldren. \"I've been expecting you, come quickly we must hastin.\"",
+            "Body": "Stepping onto the doorstep of the cabin, you notice eroding moss creeping up the outside of the walls. Bottles hang above you, tied up by rope. Before you had the chance to knock on the door, it creaks open and you're hit with the scent of herbs and blood...\"Oh shoot, house, did you let someone in again.\" A tall woman approaches you dressed in elegant wear for the house she lives in...You greet her. \"Ahhh, it's you. Let me guess, you need my help. How did I know? I know everything in this town, and that you require my assistance. Now, in order to help your little egg, I will need to brew a potion. Don't worry, this is a medicinal brew. But to do this, I will need...hmm, where did I put my book? Ah, yes, here, I need some herbal grain of some kind, a beautiful flower, Mushroom Root, and magical water. That is all I need! Get me these things and I can help you out!\"",
+            "VisitedBody": "\"Welcome back, hmmm, I see you still lack some ingredients. Remember, I need some herbal grain, a beautiful flower, a mushroom root, and magical water.\"",
+            "ItemObtained": "Stepping onto the doorstep of the cabin, you notice eroding moss creeping up the outside of the walls. Bottles hang above you, tied up by rope. Before you had the chance to knock on the door, it creaks open and you're hit with the scent of herbs and blood...\"Oh shoot, house, did you let someone in again?\" A tall woman approaches you dressed in elegant wear for the house she lives in...You greet her. \"Ahhh, it's you. Let me guess, you need my help. How did I know? I know everything in this town, and that you require my assistance. Now, in order to help your little egg, I will need to brew a potion. Don't worry, this is a medicinal brew. Oh, I see you are quite the perceptive one. You have all the items I require, perfect.\"",
+            "VisitedItemObtained": "The door creaks open once again, but no one stands behind it. You slowly walk inside to see the Witch standing over her cauldron. \"I've been expecting you, come quickly, we must hasten.\"",
             "CheckItem": ["Blessed Lake Water", "Mushroom", "Grain", ["Red Flower", "Green Flower", "Blue Flower"]],
             "Choices": [
                 {
@@ -212,23 +212,23 @@
                 },
                 {
                     "HasItems": ["Blessed Lake Water", "Mushroom", "Grain", "Red Flower"],
-                    "Text": "Give her the ingrediants",
+                    "Text": "Give her the ingredients",
                     "Target": "Get Red Potion"
                 },
                 {
                     "HasItems": ["Blessed Lake Water", "Mushroom", "Grain", "Green Flower"],
-                    "Text": "Give her the ingrediants",
+                    "Text": "Give her the ingredients",
                     "Target": "Get Green Potion"
                 },
                 {
                     "HasItems": ["Blessed Lake Water", "Mushroom", "Grain", "Blue Flower"],
-                    "Text": "Give her the ingrediants",
+                    "Text": "Give her the ingredients",
                     "Target": "Get Blue Potion"
                 }
             ]
         },
         "Get Red Potion":{
-            "Body": "You hand the witch her ingridiants and she immidiatly begins to brew. Adding in an ingreditant at a time, the witch stirs occasionally. You stand watching for what feels like awhile, but soon enough the witch grabs a bottle and fills it up with a red liquid. \"Alright, it is done. Now take this and poor it on your little egg, it should heal up and hatch. Don't worry I can get you to your egg, take this door it'll lead straight to the Egg Chamber.\" You thank the witch and hurry out of the cabin.",
+            "Body": "You hand the witch her ingredients, and she immediately begins to brew. Adding in an ingredient at a time, the witch stirs occasionally. You stand watching for what feels like a while, but soon enough, the witch grabs a bottle and fills it up with a red liquid. \"Alright, it is done. Now, take this and pour it on your little egg, it should heal up and hatch. Don't worry, I can get you to your egg. Take this door, it'll lead straight to the Egg Chamber.\" You thank the witch and hurry out of the cabin.",
             "GetItem": "Red Potion",
             "Choices": [
                 {
@@ -243,7 +243,7 @@
             ]
         },
         "Get Blue Potion":{
-            "Body": "You hand the witch her ingridiants and she immidiatly begins to brew. Adding in an ingreditant at a time, the witch stirs occasionally. You stand watching for what feels like awhile, but soon enough the witch grabs a bottle and fills it up with a blue liquid. \"Alright, it is done. Now take this and poor it on your little egg, it should heal up and hatch. Don't worry I can get you to your egg, take this door it'll lead straight to the Egg Chamber.\" You thank the witch and hurry out of the cabin.",
+            "Body": "You hand the witch her ingredients, and she immediately begins to brew. Adding in an ingredient at a time, the witch stirs occasionally. You stand watching for what feels like a while, but soon enough, the witch grabs a bottle and fills it up with a blue liquid. \"Alright, it is done. Now, take this and pour it on your little egg, it should heal up and hatch. Don't worry, I can get you to your egg. Take this door, it'll lead straight to the Egg Chamber.\" You thank the witch and hurry out of the cabin.",
             "GetItem": "Blue Potion",
             "Choices": [
                 {
@@ -257,7 +257,7 @@
             ]
         },
         "Get Green Potion":{
-            "Body": "You hand the witch her ingridiants and she immidiatly begins to brew. Adding in an ingreditant at a time, the witch stirs occasionally. You stand watching for what feels like awhile, but soon enough the witch grabs a bottle and fills it up with a green liquid. \"Alright, it is done. Now take this and poor it on your little egg, it should heal up and hatch. Don't worry I can get you to your egg, take this door it'll lead straight to the Egg Chamber.\" You thank the witch and hurry out of the cabin.",
+            "Body": "You hand the witch her ingredients, and she immediately begins to brew. Adding in an ingredient at a time, the witch stirs occasionally. You stand watching for what feels like a while, but soon enough, the witch grabs a bottle and fills it up with a green liquid. \"Alright, it is done. Now, take this and pour it on your little egg, it should heal up and hatch. Don't worry, I can get you to your egg. Take this door, it'll lead straight to the Egg Chamber.\" You thank the witch and hurry out of the cabin.",
             "GetItem": "Green Potion",
             "Choices": [
                 {
@@ -271,13 +271,13 @@
             ]
         },
         "Green Potion Ending": {
-            "Body": "\"OH, you got the witches healing potion? Wonderful wonderful, please do as you were instructed.\" Approaching the egg you delicatly upcap the green liquid and poor it over the egg. Sudenly the egg starts to glow warmly a sage green. And soon it cracks open revealing a green baby dragon. It looks up at you deeming you its parent and sneezes as plants grow around you. Congragulations you saved your dragon and hatched a Forest Dragon."
+            "Body": "\"OH, you got the witch's healing potion? Wonderful, wonderful, please do as you were instructed.\" Approaching the egg, you delicately opened the green liquid and poured it over the egg. Suddenly, the egg starts to glow warmly, a sage green. And soon it cracks open, revealing a green baby dragon. It looks up at you, deeming you its parent, and sneezes as plants grow around you. Congratulations, you saved your dragon and hatched a Forest Dragon."
         },
         "Blue Potion Ending":{
-            "Body": "\"OH, you got the witches healing potion? Wonderful wonderful, please do as you were instructed.\" Approaching the egg you delicatly upcap the blue liquid and poor it over the egg. Sudenly the egg starts to glow warmly a deep blue. And soon it cracks open revealing a blue baby dragon. It looks up at you deeming you its parent and runs to sit in the water bowl in the corner trying to play in it. Congragulations you saved your dragon and hatched a Water Dragon."
+            "Body": "\"OH, you got the witch's healing potion? Wonderful, wonderful, please do as you were instructed.\" Approaching the egg, you delicately opened the blue liquid and poured it over the egg. Suddenly, the egg starts to glow warmly, a deep blue. And soon it cracks open, revealing a blue baby dragon. It looks up at you, deeming you its parent, and runs to sit in the water bowl in the corner, trying to play in it. Congratulations, you saved your dragon and hatched a Water Dragon."
         },
         "Red Potion Ending": {
-            "Body": "\"OH, you got the witches healing potion? Wonderful wonderful, please do as you were instructed.\" Approaching the egg you delicatly upcap the red liquid and poor it over the egg. Sudenly the egg starts to glow warmly a bright red. And soon it cracks open revealing a firery red baby dragon. It looks up at you deeming you its parent and it coughs spitting out fire and smoked. Congragulations you saved your dragon and hatched a Fire Dragon."
+            "Body": "\"OH, you got the witch's healing potion? Wonderful, wonderful, please do as you were instructed.\" Approaching the egg, you delicately opened the red liquid and poured it over the egg. Suddenly, the egg starts to glow warmly, a bright red. And soon it cracks open, revealing a fiery red baby dragon. It looks up at you, deeming you its parent, and it coughs, spitting out fire and smoke. Congratulations, you saved your dragon and hatched a Fire Dragon."
         }
     }
 }
